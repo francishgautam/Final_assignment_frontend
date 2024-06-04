@@ -83,10 +83,11 @@ abbr,acronym {
 
 .navbar__block{
     display: flex;
-    justify-content: space-between;
     padding-top: 24px;
     /* padding-bottom: 24px; */
     margin-bottom: 70px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar__logo{
@@ -102,8 +103,17 @@ abbr,acronym {
 }
 
 .navbar__menu{
-    padding-right: 9.2%;
-    padding-left: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar__menu-block{
+    display: flex;
+    margin-right: 9%;
+}
+
+.navbar__mobile-menu-div{
+    margin-right: 9%;
 }
 
 .navbar__menu-list{
@@ -111,6 +121,7 @@ abbr,acronym {
     gap: 56px;
     list-style: none;
     align-items: center;
+    margin-right: 50%;
 }
 
 .navbar__menu-list>li{
@@ -121,6 +132,7 @@ abbr,acronym {
 .navbar__change-theme{
     cursor: pointer;
 }
+
 
 
 /* Change theme */
@@ -337,7 +349,8 @@ abbr,acronym {
 .project__details{
     display: flex;
     flex-direction: column;
-    padding-top: 136px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     padding-left: 9%;
     padding-right: 5%;
     /* padding-bottom: 81px; */
@@ -443,6 +456,7 @@ abbr,acronym {
         flex-direction: column-reverse;
         background-color: white;
         position: relative;
+        margin-bottom: 0px;
     }
 
     .project__sector{
@@ -496,7 +510,7 @@ abbr,acronym {
 .tools__title{
     font-size: 36px;
     font-weight: 700;
-    padding-top: 49px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-self: center;
