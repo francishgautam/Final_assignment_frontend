@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <title>Portfolio</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+
 </head>
 <body>
-
-    <script src="script.js"></script>
 
     <!-- Navbar section -->
 
@@ -26,11 +33,11 @@
                         <li>About</li>
                         <li>Work</li>
                         <li>Contact</li>
-                        <img alt="smiley-face" src="./assets/smiley-face.svg" height="24px" width="24px">
+                        <p id="navbar__toggle-theme">🌚</p>
                     </ul>
                 </div>
-                <div class="navbar__mobile-menu-div">
-                    <img alt="smiley-face" src="./assets/smiley-face.svg" height="24px" width="24px" class="navbar__change-theme">
+                <div class="navbar__mobile-menu-div ">
+                    <!-- <li id="navbar__toggle-theme">🌚</li> -->
                     <div class="navbar__mobile-menu">Menu</div>
                 </div>
             </div>
@@ -46,17 +53,17 @@
                 <p class="hero__details">Im from Indonesia and I have been working (Freelance) as a Software Development especially in the UI/UX Designer and Development for more than 2 year at Panemu Indonesia company.</p>
                 <div class="hero__links">
                     <div class="hero__get-info">
-                        <button class="button--primary" id="navbar__theme--toggle">Say hello</button>
+                        <button class="button--primary" id="navbar__theme--toggle">SAY HELLO</button>
                         <div class="hero__download">
                             <img alt="download-logo" src="./assets/download.svg">
                             <p>Download CV</p>
                         </div>
                     </div>
                     <div class="hero__contact-links">
-                        <img src="./assets/linkedin-logo.svg" alt="linkedin" class="hero__socials">
-                        <img src="./assets/instagram-logo.svg" alt="instagram">
-                        <img src="./assets/dribble-logo.svg" alt="dribble">
-                        <img src="./assets/github-logo.svg" alt="github">
+                        <i class='bx bxl-linkedin' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-dribbble' ></i>
+                        <i class='bx bxl-github'></i>
                     </div>
                 </div>
             </div>
@@ -83,18 +90,20 @@
                     <img alt="invision" src="./assets/logo-invision.svg">
                     <img alt="flutter" src="./assets/logo-flutter.svg">
                     <img alt="firebase" src="./assets/firebase-logo.svg">
-                    <img alt="github" src="./assets/github-logo.svg">
+                    <img alt="github" src="./assets/logos_git-icon.svg">
                 </div>
                 <div class="projects__button">
                     <button class="button--primary">Study Case</button>
                 </div>
             </div>
-            <img src="./assets/project-one.svg">
+            <div class="projects__image-block">
+                <img src="./assets/image-project-one.png" class="project__image">
+            </div>
         </div>
         
-        <div class="project__container">
+        <div class="project__container-two">
             <div class="project__details">
-                <div class="project__sector-two">
+                <div class="project__sector">
                     <img alt="ticketting-icon" src="./assets/ticketting-icon.svg">
                     <p class="project__sector-name">Ticketing</p>
                 </div>
@@ -112,12 +121,14 @@
                     <button class="button--primary">Study Case</button>
                 </div>
             </div>
-            <img src="./assets/project-two.svg">
+            <div class="projects__image-block">
+                <img src="./assets/image-project-two.png" class="project__image">
+           </div>
         </div>
 
-        <div class="project__container">
+        <div class="project__container-three">
             <div class="project__details">
-                <div class="project__sector-two">
+                <div class="project__sector">
                     <img alt="marketting-icon" src="./assets/health-tick.svg">
                     <p class="project__sector-name">Health</p>
                 </div>
@@ -135,7 +146,9 @@
                     <button class="button--primary">Study Case</button>
                 </div>
             </div>
-            <img src="./assets/project-three.svg">
+            <div class="projects__image-block">
+                 <img src="./assets/image-project-three.png" class="project__image">
+            </div>
         </div>
     </section>
 
@@ -185,12 +198,12 @@
             <div class="footer__contact-us">
                 <p class="footer__statement-title">Let's get in touch</p>
                 <p class="footer__statement">For business inquiry please send email to nanangprasetya.2000@gmail.com</p>
-                <button class="button--primary footer__button-mobile">Say HELLO</button>
+                <button class="button--primary footer__button-mobile">SAY HELLO</button>
                 <div class="footer__contact-links">
-                    <img src="./assets/linkedin-logo.svg">
-                    <img src="./assets/github-logo.svg">
-                    <img src="./assets/dribble-logo.svg">
-                    <img src="./assets/instagram-logo.svg">
+                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-dribbble' ></i>
+                    <i class='bx bxl-github'></i>
                 </div>
             </div>
             <button class="button--primary footer__button-pc">SAY HELLO</button>
